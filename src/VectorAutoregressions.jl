@@ -5,9 +5,9 @@
 module VectorAutoregressions
 using Parameters, GrowableArrays
 
-type Intercept end
+abstract type Intercept end
 
-type VAR
+abstract type VAR
     mData::Array
     Y::Array
     X::Array
